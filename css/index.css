@@ -1,0 +1,342 @@
+ html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+/* 插入背景图片 */
+    .slide1{
+        background-image:url("../images/bg01.jpg");
+        background-size:cover;
+    }
+    .slide2{
+        background-image:url("../images/bg02.png");
+        background-size:cover;
+    }
+    .slide3{
+        background-image:url("../images/bg03.jpg");
+        background-size:cover;
+    }
+     .slide4{
+        background-image:url("../images/bg04.jpg");
+        background-size:cover;
+    }
+     .slide5{
+        background-image:url("../images/bg05.jpg");
+        background-size:cover;
+    }
+     .slide6{
+        background-image:url("../images/bg06.png");
+        background-size:cover;
+    }
+
+    /* slide1内容的设置 */
+
+   .slide1 ul{
+    width:300px;
+    height:600px; 
+    margin:30px 0 80px;   
+   }
+  
+  .slide1 ul li:nth-of-type(1){
+    font-size:20px;
+    color:white;
+    margin-bottom:15px;
+
+  }
+   .slide1 ul li:nth-of-type(2){
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:5px;
+  }
+
+   .slide1 ul li:nth-of-type(3){
+      width:200px;
+      margin:auto;
+      margin-bottom:17px;
+   }
+   .slide1 ul li:nth-of-type(4){
+    margin-bottom:50px;
+   }
+    .resumeImg{
+    width:210px;
+   }
+
+   .slide1 ul li:nth-of-type(5){
+    font-size:27px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:30px;
+   }
+   .slide1 ul li:nth-of-type(6){
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:30px;
+   }
+  
+   .knownImg{
+    width:240px;
+   }
+
+   .slide1 ul li:nth-of-type(8){
+    position:relative;
+    top:-44px;
+    font-size:20px;
+    font-weight:bold;
+   }
+
+ /* slide2内容的设置 */
+ .slide2-bg3{
+    width:100%;
+    height:100%;
+    margin-top:160px;
+    background:url("../images/bg3.png") no-repeat; 
+    background-size:97%;      
+ }
+ .slide2Text{
+    width:100%;
+    height:70%; 
+    margin:auto;
+    float:left;
+    position:relative;
+ }
+.slide2Img{
+    width:30%; 
+    position:absolute;
+    top:50px;
+    right:50px;
+}
+.cmyImg{
+    width:90%;   
+}
+.slide2 ul{
+    margin-left:40px;
+    margin-top:50px;
+}
+.slide2 ul li{
+    font-size:23px;
+    color:#c8c5a8;
+    text-align:left;
+}
+.slide2 ul li:nth-child(1){
+    width:120px;
+    font-size:25px;
+    text-align:center;
+    font-weight:bold;
+    border:2px dashed #c8c5a8;
+    margin-bottom:20px;
+}
+
+/* slide3内容的设置 */
+.slide3-cont{
+    width:90%;
+    height:80%;
+}
+.slide3-top{
+    width:70%;
+    height:8%;
+    margin:auto;
+    font-size:30px;
+    font-weight:bold;    
+    text-align:center;
+    color:white;
+    border:2px dashed #1da19e;
+    margin-bottom:50px;
+}
+.slide3-left{
+    width:30%;
+    height:90%;
+    float:left;
+}
+.slide3-right{
+    width:70%;
+    height:90%;
+    float:left;
+}
+.slide3-left img{
+    width:80px;
+}
+.slide3-cont li{
+    font-size:20px;
+    color:white;
+    height:80px;
+    margin-bottom:10px;
+    text-align:center;
+    line-height:80px;
+  }
+
+/* slide4内容的设置 */
+.slide4-cont{
+    width:100%;
+    height:80%;
+}
+.slide4-cont li{
+    font-size:18px;
+    color:white;
+    height:80px;
+    text-align:left;
+    margin-bottom:10px;
+
+  }
+.slide4-top{
+    width:70%;
+    height:8%;
+    margin:auto;
+    font-size:30px;
+    color:white;
+    font-weight:bold;    
+    text-align:center;
+    border:2px dashed #1da19e;
+    margin-bottom:50px;
+}
+.slide4-left{
+    width:40%;
+    height:90%;
+    margin-left:40px;   
+    float:left;
+}
+.slide4-right{
+    width:40%;
+    height:90%;
+    margin-left: 20px;
+    float:left;
+}
+/* slide4中的直线动画效果设置 */
+.slide4-center{
+    width:5px;
+    background-color:#20b2aa;
+    border-radius:5px;
+    height:90%;
+    float:left;
+    margin-left:10px;
+    animation:move 4s linear 0s forwards;
+}
+@keyframes move{
+    0%{
+        height:0;
+    }
+    100%{
+        height:70%;
+    }
+
+}
+/* 直线中的圆点点 */
+.slide4-center div{
+    width:15px;
+    height:15px;
+    background-color:#ef8080;
+    border-radius:10px;
+    margin-bottom: 77px;    
+    margin-left:-80%;
+    
+
+}
+.slide4-center div:nth-child(5), .slide4-center div:nth-child(4){
+    margin-left:-90%;
+}
+
+/* slide5内容的设置 */
+.slide5-cont{
+    width:80%;
+    height:85%;      
+}
+.slide5 ul li {
+    width:100%;
+    font-size:18px;
+    color:white;
+    text-align:center;
+    margin-bottom:30px;
+}
+.slide5 ul li:nth-child(1){
+    width:70%;
+    margin:auto;   
+    font-size:30px;   
+    font-weight:bold;    
+    text-align:center;
+    border:2px dashed #1da19e;
+    margin-bottom:40px;
+}
+/* slide6内容的设置 */
+.slide6-cont{
+    width:80%;
+    height:60%;
+
+}
+.slide6 ul li{
+    width:100%;
+    font-size:40px;
+    color:white;
+    text-align:center;
+    margin-bottom:40px;
+}
+.slide6 ul li:nth-child(2){
+    font-size:25px;
+}
+
+/* 右上角音乐播放器的设置 */
+.music{
+    width:35px;
+    z-index:999;
+    position:absolute;
+    top:15px;
+    right:20px;
+    animation:music 3s linear 0s infinite;
+}
+@keyframes music{
+    from{
+        transform:rotate(0deg);
+    }to{
+        transform:rotate(360deg);
+    }
+}
+
+/* 底部箭头的设置 */
+.arrows{
+    position:absolute;
+    bottom:10px;
+    animation:run 2s linear 0s infinite;
+}
+@keyframes run{
+    0%{
+        bottom:0;
+        opacity:1;
+    }
+    100%{
+        bottom:15px;
+        opacity:0;
+
+    }
+}
+
